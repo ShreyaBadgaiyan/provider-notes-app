@@ -18,7 +18,7 @@ class AddScreen extends StatelessWidget {
               color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 28,
-              fontFamily: 'Times New Roman'
+              fontFamily: 'Arial'
           ),),
         centerTitle: true,
         elevation: 1,
@@ -52,7 +52,7 @@ class AddScreen extends StatelessWidget {
             ),
             TextField(
 
-              decoration:  InputDecoration(
+              decoration:  const InputDecoration(
                 border:UnderlineInputBorder(
                 ),
                 hintText: 'Enter Description',
@@ -82,7 +82,7 @@ class AddScreen extends StatelessWidget {
                   addNewNote(titleText, descText);
                   Navigator.pop(context);
                 },
-                child:Text('Add Note',
+                child:const Text('Add Note',
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,

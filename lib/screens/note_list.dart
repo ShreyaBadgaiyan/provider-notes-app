@@ -13,12 +13,12 @@ class NoteListScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor:Colors.grey,
       appBar: AppBar(
-        title: Text('Notes App',
+        title: const Text('Notes App',
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,
           fontSize: 28,
-          fontFamily: 'Times New Roman'
+          fontFamily: 'Arial'
         ),),
         centerTitle: true,
         elevation: 1,
@@ -43,12 +43,12 @@ class NoteListScreen extends StatelessWidget {
         onPressed: () {
           Navigator.of(context).push(MaterialPageRoute(builder: (context)=>AddScreen()));
         },
-        child: Icon(
+        backgroundColor: Colors.white,
+        child: const Icon(
           Icons.add,
           size: 30,
           color: Colors.black54,
         ),
-        backgroundColor: Colors.white,
 
 
       ),
